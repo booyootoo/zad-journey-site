@@ -1,2 +1,102 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy – Zād Journey</title><style>body{font:17px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.6;max-width:720px;margin:64px auto;padding:0 24px;color:#f2f6f8;background:#17354d}a{color:#5ec0ca}h1,h2{line-height:1.2}</style></head><body><h1>Privacy Policy</h1><p><strong>Last updated: 22 August 2026</strong></p><p>Zād Journey – Prayer does not require an account and does not contain advertising or third-party analytics.</p><h2>Location</h2><p>If you grant permission, the app uses your precise location to determine prayer times, Qibla direction, and nearby place names. Location access can be disabled in iOS Settings. When calculated prayer times are selected, latitude and longitude are sent securely to the AlAdhan prayer-times service to retrieve a schedule. We do not use location for advertising or tracking.</p><h2>Data stored on your devices</h2><p>Locations, settings, cached prayer schedules, and imported schedules are stored locally on your devices and in Apple app-group storage so the app, widgets, and paired Apple Watch can work together.</p><h2>Third-party services</h2><p>The app uses Apple location, mapping, widget, and watch connectivity technologies. Calculated schedules use the AlAdhan API. Those services may process technical information under their own privacy terms.</p><h2>Tracking and sale of data</h2><p>We do not track you across apps or websites, sell personal information, or use your data for targeted advertising.</p><h2>Contact</h2><p>For privacy questions, use the <a href="https://github.com/booyootoo/zad-journey-site/issues">public support page</a>. Do not include sensitive personal information in a public issue.</p><p><a href="../">Back to Zād Journey</a></p></body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy – Zād Journey</title><style>body{font:17px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.6;max-width:720px;margin:64px auto;padding:0 24px;color:#f2f6f8;background:#17354d}a{color:#5ec0ca}h1,h2{line-height:1.2}</style></head>
+<body>
+<h1>Privacy Policy for Zād Journey</h1>
+
+<p>Applies to version 2.0. Last updated: 25 October 2026.</p>
+
+<p>Zād Journey works without a Zād account, advertising, third-party analytics SDKs or cross-app tracking. We do not sell personal information or operate a server that receives your app records. Some features contact external services directly from your device, as explained below.</p>
+
+<p>This policy covers the iPhone and iPad app, its widgets, and the companion Apple Watch app, widgets and complications.</p>
+
+<h2>Information stored on your device</h2>
+
+<p>The app stores the information needed to provide the features you use:</p>
+
+<ul>
+<li><strong>Locations and timetables:</strong> saved place names, coordinates, time zones, imported Excel timetables, cached prayer schedules, calculation preferences, iqamah and Jumu’ah times.</li>
+<li><strong>Daily prayers:</strong> prayer statuses, dates, time zones, registration timestamps and the tracking start used for statistics. Statistics are calculated on your device.</li>
+<li><strong>Qadha:</strong> setup answers, dates or approximate years, prayer-history estimates, included prayer types, previous make-up totals and dated registrations. If you choose those options, setup also stores your entered birthdate and estimated menstrual days used to exclude days from the calculation.</li>
+<li><strong>Zakat:</strong> unfinished drafts, valuation dates and Hijri years, currency, entered assets and debts, metal weights and purity, calculation settings, prices and exchange-rate snapshots, results, directly entered amounts, and payment amounts, descriptions and dates.</li>
+<li><strong>Preferences:</strong> appearance, Calendar choices, Hijri adjustment, saved Ramadan starts and month durations, and other feature settings.</li>
+</ul>
+
+<p>Prayer history and some Qadha answers can reveal religious practice or health-related information. Zakat entries contain financial information. These entries are not uploaded to the developer, Ummah API or ExchangeRate-API. Selected records and summaries are shared with your widgets and paired Apple Watch as described below. Zād records payments you enter; it does not transfer money or process Zakat payments.</p>
+
+<h2>Optional location access</h2>
+
+<p>If you grant access, the app uses your location to resolve your city or area, obtain prayer times, determine the horizon background, support Qibla direction and update information for your current location. Background location monitoring is off by default and starts only if you enable it in Settings and grant the required system permission.</p>
+
+<p>You can use the app, including Zād+, without granting location access by searching for and saving a place manually. Opening Qibla does not automatically request location access. Without it, the compass can use magnetic north with an approximate direction; optional access supports true-north correction without changing your selected prayer location.</p>
+
+<p>Place searches, search suggestions and resolving a city from coordinates use Apple MapKit services. Search text and relevant location information are sent to Apple to provide those results.</p>
+
+<h2>Requests to external APIs</h2>
+
+<p>These requests use HTTPS and go directly to the service provider:</p>
+
+<ul>
+<li><strong>Ummah API — prayer times:</strong> the selected location’s latitude and longitude, time zone, requested year and month, calculation method, Asr school option and high-latitude rule are sent to <code>ummahapi.com/api/prayer-times/month</code>. Coordinates can come from device location or a place you select manually. The settings may indicate calculation preferences. Denying device location access does not prevent requests for manually selected places.</li>
+<li><strong>Ummah API — metal prices:</strong> the selected currency code is sent to <code>ummahapi.com/api/zakat/prices</code> to obtain gold and silver prices. Your assets, debts, metal holdings, valuation records, payments and result are not sent. Zakat calculations take place on your device.</li>
+<li><strong>ExchangeRate-API — currency conversion:</strong> the app requests a public USD exchange-rate table from <code>open.er-api.com/v6/latest/USD</code>. Conversion takes place on your device. Neither your entered amounts nor your selected source and target currencies are sent to this provider.</li>
+</ul>
+
+<p>The app does not require you to register for an API key or supply an email address to these providers.</p>
+
+<h3>Technical information and provider retention</h3>
+
+<p>External services receive your IP address and technical request information when your device connects. Local storage of your records does not mean that API requests are anonymous or never logged.</p>
+
+<p><a href="https://ummahapi.com/privacy">Ummah API’s privacy policy</a> states that it logs the endpoint, request time, IP address and user-agent for rate limiting, abuse prevention and aggregate usage counts. It describes aggregate retention but gives no fixed individual-log retention period or explicit treatment of coordinate query parameters. It lists Cloudflare, Vercel and Supabase among its service providers. Its website analytics are separate from the native app’s API requests.</p>
+
+<p><a href="https://www.exchangerate-api.com/terms">ExchangeRate-API’s privacy terms</a> describe processing in Ireland, South Africa and Germany and the use of infrastructure providers. They do not specify a retention period for this app’s open-endpoint requests.</p>
+
+<p>Provider processing is governed by their applicable privacy terms. We cannot delete their logs by removing data from your device. Their policies explain available contact and deletion-request routes.</p>
+
+<h2>Widgets and paired Apple Watch</h2>
+
+<p>The app uses Apple App Groups to share data with its widgets on the same device and WatchConnectivity to exchange information with your paired Apple Watch. Shared information includes selected location names and coordinates, time zones, prayer schedules, calendar and Ramadan information, appearance and Zād+ access status.</p>
+
+<p>Daily prayer statuses are shared with the relevant widgets. The paired Watch also receives recent daily registrations, Qadha remaining totals and recent make-up counts, and saved Zakat summaries including valuation dates, amounts due, paid and remaining, and payment dates and amounts. Daily and Qadha registrations made on the Watch are sent back to the paired iPhone. The Watch summaries do not include your Qadha setup birthdate, menstrual-day estimates or Zakat payment descriptions.</p>
+
+<p>These are Apple-provided device and extension services, not a Zād account-based cloud-sync service. The app does not provide general record synchronisation between iPhone and iPad. Information displayed in a widget or complication may be visible to someone who can see your screen, subject to your device’s privacy settings.</p>
+
+<h2>Zād+ purchases</h2>
+
+<p>Zād+ is offered as an optional one-time in-app purchase through Apple StoreKit. Apple handles payment and purchase history under its own terms. The app reads verified transactions to determine and restore access, including eligible earlier subscriptions. A local access-status snapshot is shared with widgets and the paired Watch. The developer does not receive your payment-card details through the app or send transaction information to the prayer-times or price providers.</p>
+
+<p>See <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a> for Apple’s processing of location, purchase, device and backup information, and <a href="https://www.apple.com/legal/privacy/data/en/apple-maps/">Apple Maps &amp; Privacy</a> for information about its maps services.</p>
+
+<h2>Storage, retention and deletion</h2>
+
+<p>Saved records and preferences remain locally until you change or delete them using the available controls, or remove the app’s data through the operating system. There is no automatic expiry for daily, Qadha or saved Zakat records.</p>
+
+<ul>
+<li>In <strong>My prayers</strong>, you can change a registration back to not registered to remove that prayer’s saved entry. This does not erase the tracking start used for statistics.</li>
+<li><strong>Qadha</strong> settings offer a confirmed reset of its setup, estimates and dated registrations. Daily prayer records remain separate.</li>
+<li>In <strong>Zakat</strong>, you can delete individual payments or saved records, or reset all Zakat data in its settings. Discarding an unfinished draft does not delete saved years or payments.</li>
+<li>Saved locations and imported timetables can be removed through location settings. Removing a location does not automatically erase its cached prayer schedules.</li>
+</ul>
+
+<p>Prayer-schedule caches are checked for refresh after 30 days. This is a refresh interval, not a deletion deadline; older schedules may remain for offline use. Widget and Watch copies can remain until replaced by an update or removed with the corresponding app. Delivery and refresh are controlled by Apple.</p>
+
+<p>You can revoke location access in system Settings and switch off background location inside the app. Doing so stops further access to device location; it does not erase previously saved places or schedules.</p>
+
+<p>App data may be included in device backups, including iCloud backups if enabled. Backups and restoration are controlled by your Apple settings. Removing app data from a device does not automatically remove existing backups, paired-device copies, provider logs or Apple purchase history. Deleting the app, rather than offloading it, removes its local app data according to the operating system’s behaviour.</p>
+
+<h2>External websites and support</h2>
+
+<p>Links to sources, support pages and provider websites open services with their own privacy practices. Data you choose to submit to support is separate from your local app records. Do not post prayer history, financial records, birthdates, precise locations or other sensitive information in public support issues.</p>
+
+<p>For privacy questions or requests, use the support contact shown on the App Store product page. Support information is available on the <a href="https://booyootoo.github.io/zad-journey-site/support/">Zād Journey support page</a>. The developer cannot retrieve local records from your device. Where applicable, you may have rights to access, correct or delete personal data, restrict or object to processing, and complain to your data-protection authority. For data held by a service provider, its privacy policy gives its contact route.</p>
+
+<h2>Children</h2>
+
+<p>Zād Journey is a general prayer reference and calculation tool. It does not require a child’s account or upload their prayer, Qadha or Zakat records to the developer. External requests described above can still occur when these features are used.</p>
+
+<h2>Changes</h2>
+
+<p>We may update this policy when features or data practices change. The date above identifies this revision. The current policy is available through the privacy-policy link in the app and on its App Store product page.</p>
+
+<p><a href="../">Back to Zād Journey</a></p>
+</body></html>
