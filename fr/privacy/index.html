@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Politique de confidentialité – Zād Journey</title><style>body{font:17px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.6;max-width:720px;margin:64px auto;padding:0 24px;color:#f2f6f8;background:#17354d}a{color:#5ec0ca}h1,h2{line-height:1.2}.notice{border:1px solid #486274;border-radius:12px;padding:12px 16px}</style></head>
+<body>
+<h1>Politique de confidentialité de Zād Journey</h1>
+
+<p class="notice">Cette page a été traduite de l’anglais avec l’IA et peut contenir des erreurs. En cas de divergence, la <a href="../../privacy/">version anglaise</a> fait foi.</p>
+
+<p>S’applique à la version 2.0. Dernière mise à jour : 25 octobre 2026.</p>
+
+<p>Zād Journey fonctionne sans compte Zād, sans publicité, sans SDK d’analyse tiers et sans suivi entre apps. Nous ne vendons pas d’informations personnelles et n’exploitons aucun serveur qui reçoit vos enregistrements. Certaines fonctionnalités contactent directement des services externes depuis votre appareil, comme expliqué ci-dessous.</p>
+
+<p>Cette politique couvre l’app iPhone et iPad, ses widgets, ainsi que l’app Apple Watch associée, ses widgets et ses complications.</p>
+
+<h2>Informations stockées sur votre appareil</h2>
+
+<p>L’app stocke les informations nécessaires aux fonctionnalités que vous utilisez :</p>
+
+<ul>
+<li><strong>Lieux et horaires :</strong> noms de lieux enregistrés, coordonnées, fuseaux horaires, horaires Excel importés, horaires de prière en cache, préférences de calcul, heures d’iqama et de Joumou’a.</li>
+<li><strong>Prières quotidiennes :</strong> statuts des prières, dates, fuseaux horaires, horodatages d’enregistrement et début du suivi utilisé pour les statistiques. Les statistiques sont calculées sur votre appareil.</li>
+<li><strong>Qada :</strong> réponses de configuration, dates ou années approximatives, estimations de l’historique de prière, types de prière inclus, totaux déjà rattrapés et enregistrements datés. Si vous choisissez ces options, la configuration stocke aussi la date de naissance saisie et l’estimation des jours de menstruation utilisée pour exclure des jours du calcul.</li>
+<li><strong>Zakat :</strong> brouillons inachevés, dates d’évaluation et années hégiriennes, devise, biens et dettes saisis, poids et pureté des métaux, réglages de calcul, instantanés des prix et des taux de change, résultats, montants saisis directement, ainsi que montants, descriptions et dates des paiements.</li>
+<li><strong>Préférences :</strong> apparence, choix du Calendrier, ajustement hégirien, débuts et durées du Ramadan enregistrés, et autres réglages des fonctionnalités.</li>
+</ul>
+
+<p>L’historique de prière et certaines réponses de qada peuvent révéler une pratique religieuse ou des informations liées à la santé. Les saisies de zakat contiennent des informations financières. Ces saisies ne sont pas envoyées au développeur, à Ummah API ni à ExchangeRate-API. Certains enregistrements et résumés sont partagés avec vos widgets et votre Apple Watch jumelée, comme décrit ci-dessous. Zād enregistre les paiements que vous saisissez ; il ne transfère pas d’argent et ne traite pas les paiements de zakat.</p>
+
+<h2>Accès facultatif à la position</h2>
+
+<p>Si vous l’autorisez, l’app utilise votre position pour déterminer votre ville ou zone, obtenir les horaires de prière, déterminer l’arrière-plan de l’horizon, aider à la direction de la qibla et mettre à jour les informations de votre position actuelle. La surveillance de la position en arrière-plan est désactivée par défaut et ne démarre que si vous l’activez dans les Réglages et accordez l’autorisation système requise.</p>
+
+<p>Vous pouvez utiliser l’app, y compris Zād+, sans accorder l’accès à la position, en recherchant et en enregistrant un lieu manuellement. L’ouverture de Qibla ne demande pas automatiquement l’accès à la position. Sans cet accès, la boussole peut utiliser le nord magnétique avec une direction approximative ; l’accès facultatif permet la correction vers le nord géographique sans modifier le lieu de prière sélectionné.</p>
+
+<p>Les recherches de lieux, les suggestions de recherche et la détermination d’une ville à partir de coordonnées utilisent les services Apple MapKit. Le texte recherché et les informations de position pertinentes sont envoyés à Apple pour fournir ces résultats.</p>
+
+<h2>Requêtes vers des API externes</h2>
+
+<p>Ces requêtes utilisent HTTPS et sont envoyées directement au fournisseur de service :</p>
+
+<ul>
+<li><strong>Ummah API — horaires de prière :</strong> la latitude et la longitude du lieu sélectionné, le fuseau horaire, l’année et le mois demandés, la méthode de calcul, l’option d’école pour l’Asr et la règle des hautes latitudes sont envoyés à <code>ummahapi.com/api/prayer-times/month</code>. Les coordonnées peuvent provenir de la position de l’appareil ou d’un lieu choisi manuellement. Les réglages peuvent indiquer des préférences de calcul. Refuser l’accès à la position n’empêche pas les requêtes pour des lieux choisis manuellement.</li>
+<li><strong>Ummah API — prix des métaux :</strong> le code de la devise sélectionnée est envoyé à <code>ummahapi.com/api/zakat/prices</code> pour obtenir les prix de l’or et de l’argent. Vos biens, dettes, avoirs en métaux, évaluations, paiements et résultat ne sont pas envoyés. Les calculs de zakat ont lieu sur votre appareil.</li>
+<li><strong>ExchangeRate-API — conversion de devises :</strong> l’app demande une table publique de taux de change en USD à <code>open.er-api.com/v6/latest/USD</code>. La conversion a lieu sur votre appareil. Ni vos montants saisis ni vos devises source et cible ne sont envoyés à ce fournisseur.</li>
+</ul>
+
+<p>L’app ne vous demande pas de créer une clé d’API ni de fournir une adresse e-mail à ces fournisseurs.</p>
+
+<h3>Informations techniques et conservation par les fournisseurs</h3>
+
+<p>Les services externes reçoivent votre adresse IP et des informations techniques sur la requête lorsque votre appareil se connecte. Le stockage local de vos enregistrements ne signifie pas que les requêtes d’API sont anonymes ou jamais journalisées.</p>
+
+<p>La <a href="https://ummahapi.com/privacy">politique de confidentialité d’Ummah API</a> indique qu’elle journalise le point d’accès, l’heure de la requête, l’adresse IP et l’agent utilisateur pour limiter le débit, prévenir les abus et établir des statistiques d’utilisation agrégées. Elle décrit une conservation agrégée, mais n’indique ni durée fixe de conservation des journaux individuels ni traitement explicite des paramètres de coordonnées. Elle cite Cloudflare, Vercel et Supabase parmi ses prestataires. Ses analyses de site web sont distinctes des requêtes d’API de l’app.</p>
+
+<p>Les <a href="https://www.exchangerate-api.com/terms">conditions de confidentialité d’ExchangeRate-API</a> décrivent un traitement en Irlande, en Afrique du Sud et en Allemagne et le recours à des prestataires d’infrastructure. Elles ne précisent pas de durée de conservation pour les requêtes de cette app vers le point d’accès ouvert.</p>
+
+<p>Le traitement par les fournisseurs est régi par leurs propres conditions de confidentialité. Nous ne pouvons pas supprimer leurs journaux en effaçant des données de votre appareil. Leurs politiques expliquent comment les contacter et demander une suppression.</p>
+
+<h2>Widgets et Apple Watch jumelée</h2>
+
+<p>L’app utilise les App Groups d’Apple pour partager des données avec ses widgets sur le même appareil, et WatchConnectivity pour échanger des informations avec votre Apple Watch jumelée. Les informations partagées comprennent les noms et coordonnées des lieux sélectionnés, les fuseaux horaires, les horaires de prière, les informations du calendrier et du Ramadan, l’apparence et le statut d’accès à Zād+.</p>
+
+<p>Les statuts des prières quotidiennes sont partagés avec les widgets concernés. La Watch jumelée reçoit aussi les enregistrements quotidiens récents, les totaux restants de qada et les nombres récents de prières rattrapées, ainsi que les résumés de zakat enregistrés, y compris dates d’évaluation, montants dus, payés et restants, et dates et montants des paiements. Les enregistrements quotidiens et de qada effectués sur la Watch sont renvoyés à l’iPhone jumelé. Les résumés de la Watch n’incluent pas la date de naissance de la configuration de qada, les estimations de jours de menstruation ni les descriptions des paiements de zakat.</p>
+
+<p>Il s’agit de services d’appareil et d’extension fournis par Apple, et non d’un service de synchronisation dans le cloud reposant sur un compte Zād. L’app ne propose pas de synchronisation générale des enregistrements entre iPhone et iPad. Les informations affichées dans un widget ou une complication peuvent être visibles par toute personne qui voit votre écran, selon les réglages de confidentialité de votre appareil.</p>
+
+<h2>Achats Zād+</h2>
+
+<p>Zād+ est proposé en achat intégré unique et facultatif via Apple StoreKit. Apple gère le paiement et l’historique des achats selon ses propres conditions. L’app lit les transactions vérifiées pour déterminer et restaurer l’accès, y compris les abonnements antérieurs éligibles. Un instantané local du statut d’accès est partagé avec les widgets et la Watch jumelée. Le développeur ne reçoit pas les données de votre carte de paiement via l’app et n’envoie pas d’informations de transaction aux fournisseurs d’horaires de prière ou de prix.</p>
+
+<p>Consultez la <a href="https://www.apple.com/legal/privacy/">politique de confidentialité d’Apple</a> pour le traitement par Apple des informations de position, d’achat, d’appareil et de sauvegarde, et <a href="https://www.apple.com/legal/privacy/data/en/apple-maps/">Apple Plans et la confidentialité</a> pour ses services de cartes.</p>
+
+<h2>Stockage, conservation et suppression</h2>
+
+<p>Les enregistrements et préférences sont conservés localement jusqu’à ce que vous les modifiiez ou les supprimiez avec les commandes disponibles, ou que vous supprimiez les données de l’app via le système. Les enregistrements quotidiens, de qada et de zakat n’expirent pas automatiquement.</p>
+
+<ul>
+<li>Dans <strong>Mes prières</strong>, vous pouvez repasser un enregistrement à « non enregistrée » pour supprimer l’entrée de cette prière. Cela n’efface pas le début du suivi utilisé pour les statistiques.</li>
+<li>Les réglages de <strong>Qada</strong> proposent une réinitialisation confirmée de la configuration, des estimations et des enregistrements datés. Les enregistrements des prières quotidiennes restent séparés.</li>
+<li>Dans <strong>Zakat</strong>, vous pouvez supprimer des paiements ou enregistrements individuels, ou réinitialiser toutes les données de zakat dans ses réglages. Abandonner un brouillon inachevé ne supprime ni les années enregistrées ni les paiements.</li>
+<li>Les lieux enregistrés et les horaires importés peuvent être supprimés dans les réglages des lieux. Supprimer un lieu n’efface pas automatiquement ses horaires de prière en cache.</li>
+</ul>
+
+<p>Le cache des horaires de prière est vérifié pour actualisation après 30 jours. Il s’agit d’un intervalle d’actualisation, et non d’un délai de suppression ; des horaires plus anciens peuvent rester disponibles hors ligne. Les copies des widgets et de la Watch peuvent subsister jusqu’à leur remplacement par une mise à jour ou la suppression de l’app correspondante. La distribution et l’actualisation sont gérées par Apple.</p>
+
+<p>Vous pouvez révoquer l’accès à la position dans les Réglages du système et désactiver la localisation en arrière-plan dans l’app. Cela met fin à tout nouvel accès à la position de l’appareil ; cela n’efface pas les lieux ou horaires enregistrés auparavant.</p>
+
+<p>Les données de l’app peuvent être incluses dans les sauvegardes de l’appareil, y compris les sauvegardes iCloud si elles sont activées. Les sauvegardes et restaurations dépendent de vos réglages Apple. Supprimer les données de l’app d’un appareil ne supprime pas automatiquement les sauvegardes existantes, les copies sur des appareils jumelés, les journaux des fournisseurs ni l’historique d’achats Apple. Supprimer l’app, plutôt que la décharger, efface ses données locales selon le comportement du système d’exploitation.</p>
+
+<h2>Sites externes et assistance</h2>
+
+<p>Les liens vers des sources, des pages d’assistance et des sites de fournisseurs ouvrent des services ayant leurs propres pratiques de confidentialité. Les données que vous choisissez de transmettre à l’assistance sont distinctes de vos enregistrements locaux. Ne publiez pas d’historique de prière, de données financières, de dates de naissance, de positions précises ni d’autres informations sensibles dans des demandes d’assistance publiques.</p>
+
+<p>Pour toute question ou demande relative à la confidentialité, utilisez le contact d’assistance indiqué sur la page App Store du produit. Les informations d’assistance figurent sur la <a href="../support/">page d’assistance de Zād Journey</a>. Le développeur ne peut pas récupérer les enregistrements locaux de votre appareil. Le cas échéant, vous pouvez avoir le droit d’accéder à vos données personnelles, de les rectifier ou de les supprimer, de limiter leur traitement ou de vous y opposer, et d’introduire une réclamation auprès de votre autorité de protection des données. Pour les données détenues par un fournisseur, sa politique de confidentialité indique comment le contacter.</p>
+
+<h2>Enfants</h2>
+
+<p>Zād Journey est un outil général de référence et de calcul pour la prière. Il n’exige pas de compte pour un enfant et n’envoie pas ses enregistrements de prière, de qada ou de zakat au développeur. Les requêtes externes décrites ci-dessus peuvent toutefois avoir lieu lors de l’utilisation de ces fonctionnalités.</p>
+
+<h2>Modifications</h2>
+
+<p>Nous pouvons mettre à jour cette politique lorsque les fonctionnalités ou les pratiques de traitement des données changent. La date ci-dessus identifie cette révision. La politique en vigueur est accessible via le lien de politique de confidentialité dans l’app et sur sa page App Store.</p>
+
+<p><a href="../">Retour à Zād Journey</a></p>
+</body></html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kebijakan Privasi – Zād Journey</title><style>body{font:17px -apple-system,BlinkMacSystemFont,sans-serif;line-height:1.6;max-width:720px;margin:64px auto;padding:0 24px;color:#f2f6f8;background:#17354d}a{color:#5ec0ca}h1,h2{line-height:1.2}.notice{border:1px solid #486274;border-radius:12px;padding:12px 16px}</style></head>
+<body>
+<h1>Kebijakan Privasi Zād Journey</h1>
+
+<p class="notice">Halaman ini diterjemahkan dari bahasa Inggris dengan AI dan mungkin mengandung kesalahan. Jika ada perbedaan, <a href="../../privacy/">versi bahasa Inggris</a> yang berlaku.</p>
+
+<p>Berlaku untuk versi 2.0. Terakhir diperbarui: 25 Oktober 2026.</p>
+
+<p>Zād Journey berfungsi tanpa akun Zād, iklan, SDK analitik pihak ketiga, atau pelacakan lintas aplikasi. Kami tidak menjual informasi pribadi dan tidak mengoperasikan server yang menerima catatan aplikasi Anda. Beberapa fitur menghubungi layanan eksternal langsung dari perangkat Anda, seperti dijelaskan di bawah ini.</p>
+
+<p>Kebijakan ini mencakup aplikasi iPhone dan iPad, widgetnya, serta aplikasi pendamping Apple Watch beserta widget dan komplikasinya.</p>
+
+<h2>Informasi yang disimpan di perangkat Anda</h2>
+
+<p>Aplikasi menyimpan informasi yang diperlukan untuk fitur yang Anda gunakan:</p>
+
+<ul>
+<li><strong>Lokasi dan jadwal:</strong> nama tempat tersimpan, koordinat, zona waktu, jadwal Excel yang diimpor, jadwal salat dalam cache, preferensi perhitungan, serta waktu ikamah dan Jumat.</li>
+<li><strong>Salat harian:</strong> status salat, tanggal, zona waktu, stempel waktu pencatatan, dan awal pelacakan yang digunakan untuk statistik. Statistik dihitung di perangkat Anda.</li>
+<li><strong>Qada:</strong> jawaban pengaturan, tanggal atau perkiraan tahun, perkiraan riwayat salat, jenis salat yang disertakan, total yang sudah diqada sebelumnya, dan pencatatan bertanggal. Jika Anda memilih opsi tersebut, pengaturan juga menyimpan tanggal lahir yang dimasukkan dan perkiraan hari haid yang digunakan untuk mengecualikan hari dari perhitungan.</li>
+<li><strong>Zakat:</strong> draf yang belum selesai, tanggal penilaian dan tahun Hijriah, mata uang, aset dan utang yang dimasukkan, berat dan kemurnian logam, pengaturan perhitungan, cuplikan harga dan kurs, hasil, jumlah yang dimasukkan langsung, serta jumlah, keterangan, dan tanggal pembayaran.</li>
+<li><strong>Preferensi:</strong> tampilan, pilihan Kalender, penyesuaian Hijriah, awal dan durasi Ramadan yang disimpan, serta pengaturan fitur lainnya.</li>
+</ul>
+
+<p>Riwayat salat dan sebagian jawaban qada dapat mengungkapkan praktik keagamaan atau informasi terkait kesehatan. Entri zakat berisi informasi keuangan. Entri ini tidak diunggah ke pengembang, Ummah API, atau ExchangeRate-API. Catatan dan ringkasan tertentu dibagikan ke widget dan Apple Watch yang dipasangkan, seperti dijelaskan di bawah. Zād mencatat pembayaran yang Anda masukkan; Zād tidak mentransfer uang atau memproses pembayaran zakat.</p>
+
+<h2>Akses lokasi opsional</h2>
+
+<p>Jika Anda mengizinkan, aplikasi menggunakan lokasi Anda untuk menentukan kota atau daerah, memperoleh waktu salat, menentukan latar belakang cakrawala, mendukung arah kiblat, dan memperbarui informasi untuk lokasi Anda saat ini. Pemantauan lokasi di latar belakang nonaktif secara bawaan dan hanya dimulai jika Anda mengaktifkannya di Pengaturan dan memberikan izin sistem yang diperlukan.</p>
+
+<p>Anda dapat menggunakan aplikasi, termasuk Zād+, tanpa memberikan akses lokasi dengan mencari dan menyimpan tempat secara manual. Membuka Kiblat tidak otomatis meminta akses lokasi. Tanpa akses tersebut, kompas dapat menggunakan utara magnetis dengan arah perkiraan; akses opsional mendukung koreksi ke utara sejati tanpa mengubah lokasi salat yang Anda pilih.</p>
+
+<p>Pencarian tempat, saran pencarian, dan penentuan kota dari koordinat menggunakan layanan Apple MapKit. Teks pencarian dan informasi lokasi yang relevan dikirim ke Apple untuk memberikan hasil tersebut.</p>
+
+<h2>Permintaan ke API eksternal</h2>
+
+<p>Permintaan ini menggunakan HTTPS dan dikirim langsung ke penyedia layanan:</p>
+
+<ul>
+<li><strong>Ummah API — waktu salat:</strong> lintang dan bujur lokasi yang dipilih, zona waktu, tahun dan bulan yang diminta, metode perhitungan, opsi mazhab untuk Asar, dan aturan lintang tinggi dikirim ke <code>ummahapi.com/api/prayer-times/month</code>. Koordinat dapat berasal dari lokasi perangkat atau tempat yang Anda pilih secara manual. Pengaturan tersebut dapat menunjukkan preferensi perhitungan. Menolak akses lokasi perangkat tidak mencegah permintaan untuk tempat yang dipilih secara manual.</li>
+<li><strong>Ummah API — harga logam:</strong> kode mata uang yang dipilih dikirim ke <code>ummahapi.com/api/zakat/prices</code> untuk memperoleh harga emas dan perak. Aset, utang, kepemilikan logam, catatan penilaian, pembayaran, dan hasil Anda tidak dikirim. Perhitungan zakat dilakukan di perangkat Anda.</li>
+<li><strong>ExchangeRate-API — konversi mata uang:</strong> aplikasi meminta tabel kurs USD publik dari <code>open.er-api.com/v6/latest/USD</code>. Konversi dilakukan di perangkat Anda. Jumlah yang Anda masukkan maupun mata uang asal dan tujuan tidak dikirim ke penyedia ini.</li>
+</ul>
+
+<p>Aplikasi tidak mengharuskan Anda mendaftar kunci API atau memberikan alamat email kepada penyedia ini.</p>
+
+<h3>Informasi teknis dan penyimpanan oleh penyedia</h3>
+
+<p>Layanan eksternal menerima alamat IP dan informasi teknis permintaan saat perangkat Anda terhubung. Penyimpanan lokal catatan Anda tidak berarti permintaan API bersifat anonim atau tidak pernah dicatat.</p>
+
+<p><a href="https://ummahapi.com/privacy">Kebijakan privasi Ummah API</a> menyatakan bahwa layanan itu mencatat endpoint, waktu permintaan, alamat IP, dan user-agent untuk pembatasan laju, pencegahan penyalahgunaan, dan hitungan penggunaan agregat. Kebijakan itu menjelaskan penyimpanan agregat, tetapi tidak menyebut jangka waktu tetap untuk log individual atau perlakuan khusus terhadap parameter koordinat. Kebijakan itu menyebut Cloudflare, Vercel, dan Supabase sebagai penyedia layanannya. Analitik situs webnya terpisah dari permintaan API aplikasi.</p>
+
+<p><a href="https://www.exchangerate-api.com/terms">Ketentuan privasi ExchangeRate-API</a> menjelaskan pemrosesan di Irlandia, Afrika Selatan, dan Jerman serta penggunaan penyedia infrastruktur. Ketentuan itu tidak menyebut jangka waktu penyimpanan untuk permintaan aplikasi ini ke endpoint terbuka.</p>
+
+<p>Pemrosesan oleh penyedia tunduk pada ketentuan privasi mereka. Kami tidak dapat menghapus log mereka dengan menghapus data dari perangkat Anda. Kebijakan mereka menjelaskan cara menghubungi dan mengajukan permintaan penghapusan.</p>
+
+<h2>Widget dan Apple Watch yang dipasangkan</h2>
+
+<p>Aplikasi menggunakan Apple App Groups untuk berbagi data dengan widget di perangkat yang sama, dan WatchConnectivity untuk bertukar informasi dengan Apple Watch yang dipasangkan. Informasi yang dibagikan mencakup nama dan koordinat lokasi yang dipilih, zona waktu, jadwal salat, informasi kalender dan Ramadan, tampilan, serta status akses Zād+.</p>
+
+<p>Status salat harian dibagikan ke widget terkait. Watch yang dipasangkan juga menerima pencatatan harian terbaru, sisa total qada dan jumlah qada terbaru, serta ringkasan zakat tersimpan, termasuk tanggal penilaian, jumlah terutang, yang telah dibayar dan sisanya, serta tanggal dan jumlah pembayaran. Pencatatan harian dan qada yang dibuat di Watch dikirim kembali ke iPhone yang dipasangkan. Ringkasan di Watch tidak mencakup tanggal lahir dari pengaturan qada, perkiraan hari haid, atau keterangan pembayaran zakat.</p>
+
+<p>Ini adalah layanan perangkat dan ekstensi yang disediakan Apple, bukan layanan sinkronisasi cloud berbasis akun Zād. Aplikasi tidak menyediakan sinkronisasi catatan umum antara iPhone dan iPad. Informasi yang ditampilkan di widget atau komplikasi dapat terlihat oleh siapa pun yang dapat melihat layar Anda, tergantung pengaturan privasi perangkat Anda.</p>
+
+<h2>Pembelian Zād+</h2>
+
+<p>Zād+ ditawarkan sebagai pembelian dalam aplikasi satu kali yang opsional melalui Apple StoreKit. Apple menangani pembayaran dan riwayat pembelian berdasarkan ketentuannya sendiri. Aplikasi membaca transaksi terverifikasi untuk menentukan dan memulihkan akses, termasuk langganan sebelumnya yang memenuhi syarat. Cuplikan status akses lokal dibagikan ke widget dan Watch yang dipasangkan. Pengembang tidak menerima detail kartu pembayaran Anda melalui aplikasi dan tidak mengirim informasi transaksi ke penyedia waktu salat atau harga.</p>
+
+<p>Lihat <a href="https://www.apple.com/legal/privacy/">Kebijakan Privasi Apple</a> untuk pemrosesan informasi lokasi, pembelian, perangkat, dan cadangan oleh Apple, serta <a href="https://www.apple.com/legal/privacy/data/en/apple-maps/">Apple Maps &amp; Privasi</a> untuk informasi tentang layanan petanya.</p>
+
+<h2>Penyimpanan, retensi, dan penghapusan</h2>
+
+<p>Catatan dan preferensi yang disimpan tetap ada secara lokal hingga Anda mengubah atau menghapusnya dengan kontrol yang tersedia, atau menghapus data aplikasi melalui sistem operasi. Catatan harian, qada, dan zakat tersimpan tidak kedaluwarsa secara otomatis.</p>
+
+<ul>
+<li>Di <strong>Salat Saya</strong>, Anda dapat mengubah pencatatan kembali menjadi tidak dicatat untuk menghapus entri salat tersebut. Ini tidak menghapus awal pelacakan yang digunakan untuk statistik.</li>
+<li>Pengaturan <strong>Qada</strong> menyediakan pengaturan ulang yang dikonfirmasi untuk pengaturan, perkiraan, dan pencatatan bertanggal. Catatan salat harian tetap terpisah.</li>
+<li>Di <strong>Zakat</strong>, Anda dapat menghapus pembayaran atau catatan tersimpan satu per satu, atau mengatur ulang semua data zakat di pengaturannya. Membuang draf yang belum selesai tidak menghapus tahun tersimpan atau pembayaran.</li>
+<li>Lokasi tersimpan dan jadwal yang diimpor dapat dihapus melalui pengaturan lokasi. Menghapus lokasi tidak otomatis menghapus jadwal salat dalam cache-nya.</li>
+</ul>
+
+<p>Cache jadwal salat diperiksa untuk diperbarui setelah 30 hari. Ini adalah interval pembaruan, bukan batas waktu penghapusan; jadwal yang lebih lama dapat tetap ada untuk penggunaan luring. Salinan di widget dan Watch dapat tetap ada hingga digantikan oleh pembaruan atau dihapus bersama aplikasinya. Pengiriman dan pembaruan dikendalikan oleh Apple.</p>
+
+<p>Anda dapat mencabut akses lokasi di Pengaturan sistem dan menonaktifkan lokasi latar belakang di dalam aplikasi. Hal ini menghentikan akses lebih lanjut ke lokasi perangkat; tempat atau jadwal yang tersimpan sebelumnya tidak terhapus.</p>
+
+<p>Data aplikasi dapat disertakan dalam cadangan perangkat, termasuk cadangan iCloud jika diaktifkan. Pencadangan dan pemulihan dikendalikan oleh pengaturan Apple Anda. Menghapus data aplikasi dari perangkat tidak otomatis menghapus cadangan yang ada, salinan di perangkat yang dipasangkan, log penyedia, atau riwayat pembelian Apple. Menghapus aplikasi, bukan sekadar menurunkannya (offload), menghapus data lokal aplikasi sesuai perilaku sistem operasi.</p>
+
+<h2>Situs web eksternal dan dukungan</h2>
+
+<p>Tautan ke sumber, halaman dukungan, dan situs web penyedia membuka layanan dengan praktik privasinya sendiri. Data yang Anda pilih untuk dikirim ke dukungan terpisah dari catatan aplikasi lokal Anda. Jangan unggah riwayat salat, catatan keuangan, tanggal lahir, lokasi yang tepat, atau informasi sensitif lainnya dalam permintaan dukungan publik.</p>
+
+<p>Untuk pertanyaan atau permintaan terkait privasi, gunakan kontak dukungan yang tercantum di halaman produk App Store. Informasi dukungan tersedia di <a href="../support/">halaman dukungan Zād Journey</a>. Pengembang tidak dapat mengambil catatan lokal dari perangkat Anda. Jika berlaku, Anda mungkin berhak mengakses, memperbaiki, atau menghapus data pribadi, membatasi atau menolak pemrosesan, dan mengajukan keluhan kepada otoritas perlindungan data. Untuk data yang disimpan oleh penyedia layanan, kebijakan privasinya mencantumkan cara menghubunginya.</p>
+
+<h2>Anak-anak</h2>
+
+<p>Zād Journey adalah alat rujukan dan perhitungan salat yang bersifat umum. Aplikasi ini tidak memerlukan akun anak dan tidak mengunggah catatan salat, qada, atau zakat mereka ke pengembang. Permintaan eksternal yang dijelaskan di atas tetap dapat terjadi saat fitur-fitur ini digunakan.</p>
+
+<h2>Perubahan</h2>
+
+<p>Kami dapat memperbarui kebijakan ini jika fitur atau praktik pengolahan data berubah. Tanggal di atas menunjukkan revisi ini. Kebijakan terbaru tersedia melalui tautan kebijakan privasi di aplikasi dan di halaman produk App Store.</p>
+
+<p><a href="../">Kembali ke Zād Journey</a></p>
+</body></html>
